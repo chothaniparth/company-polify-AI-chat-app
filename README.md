@@ -2,8 +2,8 @@
 
 A production-ready **Retrieval-Augmented Generation (RAG)** chat application built with:
 
-- 🤖 **Google Gemini 2.0 Flash** — LLM for answers
-- 🔢 **Google `text-embedding-004`** — State-of-the-art embeddings
+- 🤖 **OpenAI text-embedding-3-small** — LLM for answers
+- 🔢 **OpenAI `gpt-4o-mini`** — State-of-the-art embeddings
 - 🗃️ **ChromaDB** — Persistent local vector store
 - 🦜 **LangChain** — RAG pipeline + history-aware retrieval
 - 🎈 **Streamlit** — Interactive chat UI
@@ -17,7 +17,6 @@ A production-ready **Retrieval-Augmented Generation (RAG)** chat application bui
 
 - Python 3.11+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
-- A [Google AI Studio](https://aistudio.google.com) API key
 
 ### 2. Clone & set up
 
@@ -27,7 +26,7 @@ uv sync
 
 # Copy env file and add your key
 cp .env.example .env
-# Edit .env and set GOOGLE_API_KEY=your_key_here
+# Edit .env and set OPENAI_API_KEY=your_key_here
 ```
 
 ### 3. Run
